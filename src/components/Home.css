@@ -1,7 +1,79 @@
-#root{
-  padding: 0 15px;
+#root {
+  background-image: url("public/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-p{
-  color: blue;
+.container-home {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 294px 1fr;
+  grid-template-areas:
+    "main main"
+    "section section";
+}
+
+.container-main {
+  grid-area: main;
+  padding: 24px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+.container-main>span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: var(--color-light-blue);
+}
+.container-main .title-main {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 92px;
+}
+.container-main .paragraph-main {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 180%;
+}
+
+.container-button-circle {
+  grid-area: section;
+  padding: 0 24px 24px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-button-circle > button {
+  width: 144px;
+  height: 144px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+}
+.container-button-circle .button-cicle > a {
+  text-decoration: none;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-very-dark-navy);
 }

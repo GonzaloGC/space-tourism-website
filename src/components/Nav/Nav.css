@@ -1,0 +1,79 @@
+
+.container-nav {
+  visibility: visible;
+  background-color: rgba(71, 38, 118, 0.098);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  /* border: 1px solid white; */
+  width: 68%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  translate: 47%;
+}
+.container-nav2 {
+  visibility: hidden;
+  background-color: rgba(71, 38, 118, 0.098);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  /* border: 1px solid white; */
+  width: 68%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  translate: 47%;
+}
+
+.efect-nav{
+  animation-name: moveIn;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+}
+@keyframes moveIn {
+  from {
+    translate: 47%;
+  }
+  to {
+    translate: 200%;
+  }
+}
+
+.not-efect-nav{
+  animation-name: moveOut;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  /* animation-direction: reverse; */
+}
+@keyframes moveOut {
+  from {
+    translate: 47%;
+  }
+  to {
+    translate: 200%;
+  }
+}
+
+.container-icon-nav {
+  align-self: self-end;
+  padding: 32px;
+}
+
+.img-icon-close-nav {
+  width: 20px;
+  height: 20px;
+}
+
+.container-ul-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 32px;
+  padding-top: 48px;
+  padding-left: 32px;
+}
+.container-ul-nav > li {
+  list-style: none;
+}
