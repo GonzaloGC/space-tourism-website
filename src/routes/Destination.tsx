@@ -1,15 +1,30 @@
 import "./Destination.css";
+import { Link, Outlet } from "react-router-dom";
 // import { Nav } from "../../routes/Nav";
 import { Header } from "./Header";
 
-export const Destination = () => {
-  const bgDestination = {
-    backgroundImage: "url(background-destination-mobile.jpg)",
-  };
+type propDestination = {
+  // style:React.CSSProperties;
+  imgPlanet: string;
+  namePlanet: string;
+  infoPlanet: string;
+  avgDistance: string;
+  travelTime: string;
+};
+
+export const Destination = (props: propDestination) => {
+  const { namePlanet, imgPlanet, infoPlanet, avgDistance, travelTime } = props;
+
+  // const bgDestination: React.CSSProperties = {
+  //   backgroundImage: "url(background-destination-mobile.jpg)",
+  // };
 
   return (
     <>
-      <section className="container-bg-destination" style={bgDestination}>
+      <div id="detail">
+        <Outlet />
+      </div>
+      <section className="container-bg-destination">
         <Header />
         <section className="container-destination">
           <div className="container-title-img">
@@ -18,49 +33,45 @@ export const Destination = () => {
               <span>PICK YOUR DESTINATION</span>
             </h1>
             <div className="container-img-moon">
-              <img className="img-moon" src="/image-moon.webp" alt="" />
+              <img className="img-moon" src={imgPlanet} alt="" />
             </div>
           </div>
           <div className="container-info-moon">
             <aside className="container-aside">
               <ul className="container-li">
                 <li>
-                  <a href="#">MOON</a>
+                  <Link to="/destination">MOON</Link>
                 </li>
                 <li>
-                  <a href="#">MARS</a>
+                  <Link to="/destination/destinationmoon">MARS</Link>
                 </li>
                 <li>
-                  <a href="#">EUROPA</a>
+                  <Link to="#">EUROPA</Link>
                 </li>
                 <li>
-                  <a href="#">TITAN</a>
+                  <Link to="#">TITAN</Link>
                 </li>
               </ul>
             </aside>
             <div className="text-moon">
-              <h2>MOON</h2>
-              <p>
-                See our planet as you’ve never seen it before. A perfect
-                relaxing trip away to help regain perspective and come back
-                refreshed. While you’re there, take in some history by visiting
-                the Luna 2 and Apollo 11 landing sites.
-              </p>
+              <h2>{namePlanet}</h2>
+              <p>{infoPlanet}</p>
             </div>
             <div className="line-moon"></div>
             <div className="info-moon">
               <div className="info-dis-moon">
                 <span>AVG. DISTANCE</span>
-                <span>384,400 km</span>
+                <span>{avgDistance}</span>
               </div>
               <div className="info-travel-moon">
                 <span>Est. travel time</span>
-                <span>3 days</span>
+                <span>{travelTime}</span>
               </div>
             </div>
           </div>
         </section>
       </section>
+      
     </>
   );
 };

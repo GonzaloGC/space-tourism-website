@@ -3,8 +3,10 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Root } from "./routes/Root.tsx";
 import "./index.css";
-import { Destination } from "./routes/Destination.tsx";
+// import { Destination } from "./routes/Destination.tsx";
 import { Home } from "./routes/Home.tsx";
+import { DestinationMoon } from "./routes/DestinationMoon.tsx";
+import { DestinationMars } from "./routes/DestinationMars.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +19,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/destination",
-        element: <Destination />,
+        element: <DestinationMoon />,
+        children:[
+          {
+            path: "/destination/destinationmoon",
+            element: <DestinationMars/>,
+          },
+        ]
       },
     ],
   },
