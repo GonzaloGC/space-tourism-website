@@ -1,14 +1,18 @@
-.container-destination {
-  margin: 0;
+.container-bg-destination{
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container-destination {
+  margin: 0;
+  
   width: 100vw;
   height: 100vh;
   padding: 24px;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 243px 1fr;
+  grid-template-rows: 242px 1fr;
   row-gap: 32px;
   grid-template-areas:
     "titleImg titleImg"
@@ -23,7 +27,7 @@
   flex-direction: column;
   row-gap: 24px;
   /* gap: 20px; */
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 

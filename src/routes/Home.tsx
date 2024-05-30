@@ -2,12 +2,19 @@ import "./Home.css";
 import "@fontsource/bellefair";
 import "@fontsource/barlow";
 import "@fontsource/barlow-condensed";
-// import { Header } from "./Header/Header";
+import { Header } from "./Header";
+// import { Outlet } from "react-router-dom";
 
 export const Home = () => {
+
+  const bgHome = {
+    backgroundImage: "url(/background-home-mobile.jpg)"
+  };
+
   return (
     <>
-      <section>
+      <section className="container-bg" style={bgHome}>
+        <Header />
         <section className="container-home">
           <main className="container-main">
             <span>SO, YOU WANT TO TRAVEL TO</span>

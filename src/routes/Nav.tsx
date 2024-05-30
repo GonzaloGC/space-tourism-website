@@ -32,8 +32,8 @@ export const Nav = (props:navProps) => {
           </div>
           <div>
             <ul className="container-ul-nav">
-              <li><Link to="">01 HOME</Link></li>
-              <li><Link to="destination">02 DESTINATION</Link></li>
+              <li><Link to="/">01 HOME</Link></li>
+              <li><Link to="/destination">02 DESTINATION</Link></li>
               <li><Link to="">03 CREW</Link></li>
               <li><Link to="">04 TECHNOLOGY</Link></li>
             </ul>

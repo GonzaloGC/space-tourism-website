@@ -1,12 +1,8 @@
-#root {
-  background-image: url("/background-home-mobile.jpg");
+.container-bg{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .container-home {
-  
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
