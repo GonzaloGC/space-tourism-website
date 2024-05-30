@@ -1,4 +1,5 @@
 import "./Nav.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 type navProps ={
@@ -18,23 +19,23 @@ export const Nav = (props:navProps) => {
     <>
       <section>
         <nav className={
-          openAnimation ? "container-nav efect-nav" : closeAnimation ? "container-nav2 not-efect-nav": "container-nav"
+           openAnimation ? "container-nav efect-nav" : "container-nav2"
           } >
           <div className="container-icon-nav">
             <a href="#" onClick={handleClick}>
               <img
                 className="img-icon-close-nav"
-                src="public/icon-close.svg"
+                src="/icon-close.svg"
                 alt=""
               />
             </a>
           </div>
           <div>
             <ul className="container-ul-nav">
-              <li>01 HOME</li>
-              <li>02 DESTINATION</li>
-              <li>03 CREW</li>
-              <li>04 TECHNOLOGY</li>
+              <li><Link to="">01 HOME</Link></li>
+              <li><Link to="destination">02 DESTINATION</Link></li>
+              <li><Link to="">03 CREW</Link></li>
+              <li><Link to="">04 TECHNOLOGY</Link></li>
             </ul>
           </div>
         </nav>

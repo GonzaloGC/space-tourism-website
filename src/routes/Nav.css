@@ -16,7 +16,6 @@
   background-color: rgba(71, 38, 118, 0.098);
   backdrop-filter: blur(30px);
   position: absolute;
-  /* border: 1px solid white; */
   width: 68%;
   height: 100vh;
   display: flex;

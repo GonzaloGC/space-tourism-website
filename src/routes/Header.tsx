@@ -1,5 +1,5 @@
 import './Header.css'
-import { Nav } from '../Nav/Nav';
+import { Nav } from './Nav';
 import { useState } from 'react';
 
 // type headerProps ={
@@ -21,8 +21,8 @@ export const Header = () => {
       <Nav openAnimation={openAnimation}/>
       <section className="container-header">
         <header className="container-img-header">
-          <a href="#"><img className='img-logo-header' src="/public/logo.svg" alt="logo home" /></a>
-          <a href="#" onClick={handleClick}><img className='icon-burguer-header' src="/public/icon-hamburger.svg" alt="icon burguer" /></a>
+          <a href="#"><img className='img-logo-header' src="/logo.svg" alt="logo home" /></a>
+          <a href="#" onClick={handleClick}><img className='icon-burguer-header' src="/icon-hamburger.svg" alt="icon burguer" /></a>
         </header>
       </section>
     </>
