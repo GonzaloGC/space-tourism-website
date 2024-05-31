@@ -1,5 +1,5 @@
 import './Header.css'
-import { Nav } from './Nav';
+import { Nav } from '../Nav/Nav';
 import { useState } from 'react';
 
 // type headerProps ={

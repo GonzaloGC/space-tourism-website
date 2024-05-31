@@ -4,9 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Root } from "./routes/Root.tsx";
 import "./index.css";
 // import { Destination } from "./routes/Destination.tsx";
-import { Home } from "./routes/Home.tsx";
-import { DestinationMoon } from "./routes/DestinationMoon.tsx";
-import { DestinationMars } from "./routes/DestinationMars.tsx";
+import { Home } from "./routes/Home/Home.tsx";
+import { DestinationMoon } from "./routes/Destination/DestinationMoon.tsx";
+import { DestinationMars } from "./routes/Destination/DestinationMars.tsx";
+import { DestinationTitan } from "./routes/Destination/DestinationTitan.tsx";
+import { DestinationEuropa } from "./routes/Destination/DestinationEuropa.tsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
           {
             path: "/destination/destinationmoon",
             element: <DestinationMars/>,
+          },
+          {
+            path: "/destination/destinationeuropa",
+            element: <DestinationEuropa/>,
+          },
+          {
+            path: "/destination/destinationtitan",
+            element: <DestinationTitan/>,
           },
         ]
       },

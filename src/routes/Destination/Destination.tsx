@@ -1,7 +1,7 @@
 import "./Destination.css";
 import { Link, Outlet } from "react-router-dom";
 // import { Nav } from "../../routes/Nav";
-import { Header } from "./Header";
+import { Header } from "../../components/Header/Header"; 
 
 type propDestination = {
   // style:React.CSSProperties;
@@ -46,10 +46,10 @@ export const Destination = (props: propDestination) => {
                   <Link to="/destination/destinationmoon">MARS</Link>
                 </li>
                 <li>
-                  <Link to="#">EUROPA</Link>
+                  <Link to="/destination/destinationeuropa">EUROPA</Link>
                 </li>
                 <li>
-                  <Link to="#">TITAN</Link>
+                  <Link to="/destination/destinationtitan">TITAN</Link>
                 </li>
               </ul>
             </aside>
