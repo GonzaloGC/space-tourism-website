@@ -7,13 +7,9 @@ import { Header } from "../../components/Header/Header";
 
 export const Home = () => {
 
-  const bgHome = {
-    backgroundImage: "url(/background-home-mobile.jpg)"
-  };
-
   return (
     <>
-      <section className="container-bg" style={bgHome}>
+      <section className="container-bg" >
         <Header />
         <section className="container-home">
           <main className="container-main">

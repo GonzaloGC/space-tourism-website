@@ -9,6 +9,7 @@ import { DestinationMoon } from "./routes/Destination/DestinationMoon.tsx";
 import { DestinationMars } from "./routes/Destination/DestinationMars.tsx";
 import { DestinationTitan } from "./routes/Destination/DestinationTitan.tsx";
 import { DestinationEuropa } from "./routes/Destination/DestinationEuropa.tsx";
+import { Crew } from "./routes/Crew/Crew.tsx";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,14 @@ const router = createBrowserRouter([
             path: "/destination/destinationtitan",
             element: <DestinationTitan/>,
           },
-        ]
+        ],
+      },
+      {
+        path: "/crew",
+        element: <Crew />,
+        children:[
+          
+        ],
       },
     ],
   },
