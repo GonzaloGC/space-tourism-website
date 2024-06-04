@@ -8,6 +8,7 @@ export const Crew =()=>{
         <Header/>
         <div className='container-crew'>
           <h1>MEET YOUR CREW</h1>
+          <h1>MEET YOUR CREW</h1>
         
         </div>
       </section>

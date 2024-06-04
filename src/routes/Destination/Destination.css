@@ -2,13 +2,15 @@
   background-image: url("/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .container-destination {
   margin: 0;
-
+  overflow-y: hidden;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 24px;
   box-sizing: border-box;
   display: grid;

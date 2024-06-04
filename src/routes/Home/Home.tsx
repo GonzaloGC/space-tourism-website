@@ -3,6 +3,7 @@ import "@fontsource/bellefair";
 import "@fontsource/barlow";
 import "@fontsource/barlow-condensed";
 import { Header } from "../../components/Header/Header";
+import { Link } from "react-router-dom";
 
 
 export const Home = () => {
@@ -24,7 +25,7 @@ export const Home = () => {
           </main>
           <section className="container-button-circle">
             <button className="button-cicle">
-              <a href="">EXPLORE</a>
+              <Link to="/destination">EXPLORE</Link>
             </button>
           </section>
         </section>
