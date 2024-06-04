@@ -22,18 +22,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/destination",
-        element: <DestinationMoon />,
+        element: <Root />,
         children:[
           {
-            path: "/destination/destinationmoon",
+            path: "/destination/moon",
+            element: <DestinationMoon/>,
+          },
+          {
+            path: "/destination/mars",
             element: <DestinationMars/>,
           },
           {
-            path: "/destination/destinationeuropa",
+            path: "/destination/europa",
             element: <DestinationEuropa/>,
           },
           {
-            path: "/destination/destinationtitan",
+            path: "/destination/titan",
             element: <DestinationTitan/>,
           },
         ],

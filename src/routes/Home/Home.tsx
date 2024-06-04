@@ -25,7 +25,7 @@ export const Home = () => {
           </main>
           <section className="container-button-circle">
             <button className="button-cicle">
-              <Link to="/destination">EXPLORE</Link>
+              <Link to="/destination/moon">EXPLORE</Link>
             </button>
           </section>
         </section>

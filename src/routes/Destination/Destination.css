@@ -203,23 +203,29 @@
     background-image: url("/background-destination-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
   }
   .container-destination {
     margin: 0;
-
+    overflow-y: hidden;
     width: 100vw;
-    height: 100vh;
     padding: 24px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 432px 384px;
-    /* row-gap: 5%; */
     row-gap: 32px;
     grid-template-areas:
       "titleImg titleImg"
       "infoMoon infoMoon";
   }
+
+
+
+
+  
   .container-title-img {
     padding: 0;
     margin: 0;
@@ -231,6 +237,7 @@
     justify-content: space-between;
     /* align-items: center; */
     text-align: start;
+    box-sizing: border-box;
   }
   .container-title {
     margin: 0;
@@ -240,6 +247,7 @@
     gap: 24px;
     text-align: center;
     font-size: 15px;
+    box-sizing: border-box;
   }
   .container-title > span:nth-child(1) {
     font-family: "Barlow Condensed";
@@ -250,7 +258,8 @@
     letter-spacing: 0.15em;
     color: #ffffff;
     opacity: 0.25;
-    /* align-content: flex-start; */
+    box-sizing: border-box;
+
   }
   .container-title > span:nth-child(2) {
     font-family: "Barlow Condensed";
@@ -260,21 +269,25 @@
     line-height: 20px;
     letter-spacing: 0.15em;
     color: #ffffff;
+    box-sizing: border-box;
   }
   .container-img-moon {
     height: 384px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
   }
   .img-moon {
     width: 300px;
     height: 300px;
+    box-sizing: border-box;
   }
 
   .container-info-moon {
     grid-area: infoMoon;
     padding: 11.5px 88px;
+    box-sizing: border-box;
   }
   .text-moon > h2 {
     padding-top: 24px;
@@ -285,6 +298,7 @@
     font-size: 56px;
     line-height: 64px;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .info-moon {
@@ -294,10 +308,11 @@
     justify-content: space-around;
     align-items: center;
     gap: 24px;
+    box-sizing: border-box;
   }
 }
 
-@media (width > 1385px){
+@media (width > 1385px) {
   .container-bg-destination {
     background-image: url("/background-destination-desktop.jpg");
     background-repeat: no-repeat;
@@ -399,7 +414,7 @@
   .container-li > li > a {
     text-decoration: none;
   }
-  
+
   .text-moon {
     padding-bottom: 24px;
   }
@@ -423,7 +438,7 @@
     line-height: 180%;
     text-align: left;
   }
-  
+
   .info-moon {
     padding-top: 24px;
     display: flex;
@@ -448,7 +463,7 @@
     text-align: start;
     letter-spacing: 2px;
     text-transform: uppercase;
-  
+
     color: #d0d6f9;
   }
   .info-dis-moon > span:nth-child(2) {
@@ -487,5 +502,4 @@
     text-align: start;
     text-transform: uppercase;
   }
-
 }

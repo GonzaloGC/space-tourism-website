@@ -1,7 +1,8 @@
 import "./Destination.css";
 import { Link, Outlet } from "react-router-dom";
 // import { Nav } from "../../routes/Nav";
-import { Header } from "../../components/Header/Header"; 
+import { Header } from "../../components/Header/Header";
+import { Title } from "../../components/Title";
 
 type propDestination = {
   // style:React.CSSProperties;
@@ -28,10 +29,7 @@ export const Destination = (props: propDestination) => {
         <Header />
         <section className="container-destination">
           <div className="container-title-img">
-            <h1 className="container-title">
-              <span>01</span>
-              <span>PICK YOUR DESTINATION</span>
-            </h1>
+            <Title numTitle="01" title="PICK YOUR DESTINATION"/>
             <div className="container-img-moon">
               <img className="img-moon" src={imgPlanet} alt="" />
             </div>
@@ -40,16 +38,16 @@ export const Destination = (props: propDestination) => {
             <aside className="container-aside">
               <ul className="container-li">
                 <li>
-                  <Link to="/destination">MOON</Link>
+                  <Link to="/destination/moon">MOON</Link>
                 </li>
                 <li>
-                  <Link to="/destination/destinationmoon">MARS</Link>
+                  <Link to="/destination/mars">MARS</Link>
                 </li>
                 <li>
-                  <Link to="/destination/destinationeuropa">EUROPA</Link>
+                  <Link to="/destination/europa">EUROPA</Link>
                 </li>
                 <li>
-                  <Link to="/destination/destinationtitan">TITAN</Link>
+                  <Link to="/destination/titan">TITAN</Link>
                 </li>
               </ul>
             </aside>
