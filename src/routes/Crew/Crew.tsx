@@ -1,8 +1,19 @@
 import { Header } from "../../components/Header/Header";
 import { Title } from "../../components/Title";
+import { Link } from "react-router-dom";
 import "./Crew.css";
 
-export const Crew = () => {
+type crewProps ={
+  role: string
+  name: string
+  info: string
+  image: string
+}
+
+export const Crew = (props: crewProps) => {
+
+  const {role, name, info, image } = props
+
   return (
     <>
       <section className="container-root-crew">
@@ -12,27 +23,25 @@ export const Crew = () => {
             <Title numTitle="02" title="MEET YOUR CREW" />
             <div className="container-name-and-info">
               <div className="container-cargo-name">
-                <h3 className="cargo-crew">Commander</h3>
-                <h2 className="name-crew">Douglas Hurley</h2>
+                <h3 className="cargo-crew">{role}</h3>
+                <h2 className="name-crew">{name}</h2>
               </div>
               <p className="info-crew">
-                Douglas Gerald Hurley is an American engineer, former Marine Corps
-                pilot and former NASA astronaut. He launched into space for the
-                third time as commander of Crew Dragon Demo-2.
+                {info}
               </p>
             </div>
             <ul className="container-circles-nav">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <Link className="circle" to="/crew/douglashurley"><li></li></Link>
+              <Link className="circle" to="/crew/mark"><li></li></Link>
+              <Link className="circle" to="/crew/Victor"><li></li></Link>
+              <Link className="circle" to="/crew/anousheh"><li></li></Link>
             </ul>
           </div>
 
           <div className="container-img-crew">
             <img
               className="img-dauglas"
-              src="/images/crew/image-douglas-hurley.webp"
+              src={image}
               alt=""
             />
             <div className="img-blur-out"><div className="img-blur-in"></div></div>

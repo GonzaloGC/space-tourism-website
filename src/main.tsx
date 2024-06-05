@@ -1,15 +1,18 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Root } from "./routes/Root.tsx";
-import "./index.css";
-// import { Destination } from "./routes/Destination.tsx";
 import { Home } from "./routes/Home/Home.tsx";
 import { DestinationMoon } from "./routes/Destination/DestinationMoon.tsx";
 import { DestinationMars } from "./routes/Destination/DestinationMars.tsx";
 import { DestinationTitan } from "./routes/Destination/DestinationTitan.tsx";
 import { DestinationEuropa } from "./routes/Destination/DestinationEuropa.tsx";
-import { Crew } from "./routes/Crew/Crew.tsx";
+import { CrewDouglas } from "./routes/Crew/CrewDouglas.tsx";
+import { CrewMark } from "./routes/Crew/CrewMark.tsx";
+import { CrewVictor } from "./routes/Crew/CrewVictor.tsx";
+import { CrewAnousheh } from "./routes/Crew/CrewAnousheh.tsx";
+
 
 const router = createBrowserRouter([
   {
@@ -44,9 +47,24 @@ const router = createBrowserRouter([
       },
       {
         path: "/crew",
-        element: <Crew />,
+        element: <Root />,
         children:[
-          
+          {
+            path: "/crew/douglashurley",
+            element: <CrewDouglas/>,
+          },
+          {
+            path: "/crew/mark",
+            element: <CrewMark/>,
+          },
+          {
+            path: "/crew/Victor",
+            element: <CrewVictor/>,
+          },
+          {
+            path: "/crew/anousheh",
+            element: <CrewAnousheh/>,
+          },
         ],
       },
     ],

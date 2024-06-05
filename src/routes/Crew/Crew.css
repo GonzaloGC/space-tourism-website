@@ -89,11 +89,12 @@
   column-gap: 16px;
   justify-self: flex-end;
 }
-.container-circles-nav > li {
+.container-circles-nav > a {
   background-color: white;
   border-radius: 50%;
   width: 10px;
   height: 10px;
+  cursor: pointer;
 }
 
 .container-img-crew {
