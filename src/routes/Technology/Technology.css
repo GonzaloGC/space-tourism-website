@@ -1,0 +1,117 @@
+.container-bg-tech {
+  background-image: url("../images/technology/background-technology-mobile.jpg");
+  background-size: cover;
+  min-height: 500px;
+  height: 100vh;
+}
+
+.container-tech {
+  box-sizing: border-box;
+  padding: 24px 24px 48px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 322px 1fr;
+  grid-template-areas:
+    "title title"
+    "imgTech imgTech"
+    "infoTech infoTech";
+}
+.continer-title-tech {
+  grid-area: title;
+  padding-bottom: 24px;
+}
+.container-img-tech {
+  grid-area: imgTech;
+  padding-top: 64px;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.img-launch-tech {
+  object-fit: cover;
+  height: 258px;
+  width: 100vw;
+  max-width: 100vw;
+  object-position: bottom;
+}
+.container-info-tech {
+  grid-area: infoTech;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container-links-tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+.container-info-tech {
+  display: flex;
+  gap: 40px;
+}
+.container-links-tech > li > a {
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bellefair';
+  color: #ffffff;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+.container-title-p {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container-title-p h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.container-title-p h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+}
+.paragraph-tech {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 180%;
+  /* text-align: center; */
+
+  color: #d0d6f9; 
+}

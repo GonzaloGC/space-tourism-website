@@ -12,58 +12,78 @@ import { CrewDouglas } from "./routes/Crew/CrewDouglas.tsx";
 import { CrewMark } from "./routes/Crew/CrewMark.tsx";
 import { CrewVictor } from "./routes/Crew/CrewVictor.tsx";
 import { CrewAnousheh } from "./routes/Crew/CrewAnousheh.tsx";
-
+import { TechnologyLaunch } from "./routes/Technology/TechnologyLaunch.tsx";
+import { TechnologySpaceport } from "./routes/Technology/TechnologySpaceport.tsx";
+import { TechnologySpaceCapsule } from "./routes/Technology/TechnologySpaceCapsule.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
+    element: <Root />,
     children: [
       {
         path: "",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "/destination",
         element: <Root />,
-        children:[
+        children: [
           {
             path: "/destination/moon",
-            element: <DestinationMoon/>,
+            element: <DestinationMoon />,
           },
           {
             path: "/destination/mars",
-            element: <DestinationMars/>,
+            element: <DestinationMars />,
           },
           {
             path: "/destination/europa",
-            element: <DestinationEuropa/>,
+            element: <DestinationEuropa />,
           },
           {
             path: "/destination/titan",
-            element: <DestinationTitan/>,
+            element: <DestinationTitan />,
           },
         ],
       },
       {
         path: "/crew",
         element: <Root />,
-        children:[
+        children: [
           {
             path: "/crew/douglashurley",
-            element: <CrewDouglas/>,
+            element: <CrewDouglas />,
           },
           {
             path: "/crew/mark",
-            element: <CrewMark/>,
+            element: <CrewMark />,
           },
           {
             path: "/crew/Victor",
-            element: <CrewVictor/>,
+            element: <CrewVictor />,
           },
           {
             path: "/crew/anousheh",
-            element: <CrewAnousheh/>,
+            element: <CrewAnousheh />,
+          },
+        ],
+      },
+      {
+        path: "/technology",
+        element: <Root />,
+        children: [
+          {
+            path: "/technology/launch",
+            element: <TechnologyLaunch />,
+          },
+          {
+            path: "/technology/spaceport",
+            element: <TechnologySpaceport />,
+          },
+          {
+            path: "/technology/spacecapsule",
+            element: <TechnologySpaceCapsule />,
           },
         ],
       },
