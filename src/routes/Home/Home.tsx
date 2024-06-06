@@ -5,12 +5,10 @@ import "@fontsource/barlow-condensed";
 import { Header } from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 
-
 export const Home = () => {
-
   return (
     <>
-      <section className="container-bg" >
+      <section className="container-bg">
         <Header />
         <section className="container-home">
           <main className="container-main">

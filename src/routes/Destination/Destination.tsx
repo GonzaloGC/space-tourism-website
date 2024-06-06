@@ -2,7 +2,7 @@ import "./Destination.css";
 import { Link, Outlet } from "react-router-dom";
 // import { Nav } from "../../routes/Nav";
 import { Header } from "../../components/Header/Header";
-import { Title } from "../../components/Title";
+import { Title } from "../../components/Title/Title";
 
 type propDestination = {
   // style:React.CSSProperties;

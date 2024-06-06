@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
-import { Title } from "../../components/Title";
+import { Title } from "../../components/Title/Title";
 import "./Technology.css";
 
 type technologyProps = {

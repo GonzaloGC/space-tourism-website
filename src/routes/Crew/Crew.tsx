@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header/Header";
-import { Title } from "../../components/Title";
+import { Title } from "../../components/Title/Title";
 import { Link } from "react-router-dom";
 import "./Crew.css";
 

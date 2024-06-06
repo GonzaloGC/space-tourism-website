@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .container-destination {
@@ -15,13 +16,14 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 242px 446px;
+  grid-template-rows: 1fr max-content;
   /* row-gap: 5%; */
   row-gap: 32px;
   grid-template-areas:
     "titleImg titleImg"
     "infoMoon infoMoon";
 }
+/* 242px */
 
 .container-title-img {
   padding: 0;
@@ -65,7 +67,9 @@
 }
 
 .container-img-moon {
-  height: 203px;
+  height: 20dvh;
+  min-height: 125px;
+  /* height: 203px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,6 +120,7 @@
   font-size: 56px;
   line-height: 64px;
   text-align: center;
+  text-transform: uppercase;
 }
 .text-moon > p {
   padding-top: 16px;
@@ -222,9 +227,6 @@
       "infoMoon infoMoon";
   }
 
-
-
-
   
   .container-title-img {
     padding: 0;
@@ -317,12 +319,15 @@
     background-image: url("/background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
   }
   .container-destination {
     margin: 0;
-    min-width: 1200px;
-    width: 100vw;
-    height: 100vh;
+    /* min-width: 1200px; */
+    /* width: 100vw;
+    height: 100vh; */
     padding: 48px 165px;
     box-sizing: border-box;
     display: grid;
@@ -337,7 +342,7 @@
   }
 
   .container-title-img {
-    height: 792px;
+    /* height: 792px; */
     padding: 0;
     margin: 0;
     grid-area: titleImg;
