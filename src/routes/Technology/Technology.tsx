@@ -21,7 +21,7 @@ export const Technology = (props: technologyProps) => {
             <Title numTitle="03" title="SPACE LAUNCH 101" />
           </div>
         <div className="container-img-tech">
-          <img className="img-launch-tech" src={image} alt="" />
+          <img className="img-launch-tech" src={image} alt="Image of the rockets that will be used for the trip" />
         </div>
         <div className="container-info-tech">
           <ul className="container-links-tech">

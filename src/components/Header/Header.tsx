@@ -2,14 +2,8 @@ import "./Header.css";
 import { Nav } from "../Nav/Nav";
 import { useState } from "react";
 
-// type headerProps ={
-//   handleClick: ()=> void
-// }
-
 export const Header = () => {
-  // props: headerProps
-  // const {handleClick} = props;
-
+  
   const [openAnimation, setOpenAnimation] = useState(false);
 
   const handleClick = () => {
@@ -20,13 +14,13 @@ export const Header = () => {
       <Nav openAnimation={openAnimation} />
       <header className="container-img-header">
         <a href="#">
-          <img className="img-logo-header" src="/logo.svg" alt="logo home" />
+          <img className="img-logo-header" src="/logo.svg" alt="image of the header section logo" />
         </a>
         <a href="#" onClick={handleClick}>
           <img
             className="icon-burguer-header"
             src="/icon-hamburger.svg"
-            alt="icon burguer"
+            alt="hamburger icon image for navigation"
           />
         </a>
       </header>

@@ -31,7 +31,7 @@ export const Destination = (props: propDestination) => {
           <div className="container-title-img">
             <Title numTitle="01" title="PICK YOUR DESTINATION"/>
             <div className="container-img-moon">
-              <img className="img-moon" src={imgPlanet} alt="" />
+              <img className="img-moon" src={imgPlanet} alt="Image of one of the planets to which one will travel" />
             </div>
           </div>
           <div className="container-info-moon">

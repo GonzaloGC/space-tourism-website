@@ -42,7 +42,7 @@ export const Crew = (props: crewProps) => {
             <img
               className="img-dauglas"
               src={image}
-              alt=""
+              alt="image with a crew member of the trip to space"
             />
             <div className="img-blur-out"><div className="img-blur-in"></div></div>
           </div>

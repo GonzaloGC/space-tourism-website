@@ -26,7 +26,7 @@ export const Nav = (props:navProps) => {
               <img
                 className="img-icon-close-nav"
                 src="/icon-close.svg"
-                alt=""
+                alt="image of the closed icon to cancel or close navigation"
               />
             </a>
           </div>
