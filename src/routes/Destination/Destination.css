@@ -1,5 +1,5 @@
 .container-bg-destination {
-  background-image: url("/background-destination-mobile.jpg");
+  background-image: url("../images/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -205,7 +205,7 @@
 
 @media (width > 768px) {
   .container-bg-destination {
-    background-image: url("/background-destination-tablet.jpg");
+    background-image: url("../images/destination/background-destination-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -316,7 +316,7 @@
 
 @media (width > 1385px) {
   .container-bg-destination {
-    background-image: url("/background-destination-desktop.jpg");
+    background-image: url("../images/destination/background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
