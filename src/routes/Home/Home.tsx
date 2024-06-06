@@ -22,9 +22,9 @@ export const Home = () => {
             </p>
           </main>
           <section className="container-button-circle">
-            <button className="button-cicle">
-              <Link to="/destination/moon">EXPLORE</Link>
-            </button>
+            <Link to="/destination/moon">
+              <button className="button-cicle">EXPLORE</button>
+            </Link>
           </section>
         </section>
       </section>
