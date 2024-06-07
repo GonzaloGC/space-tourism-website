@@ -8,12 +8,10 @@ type crewProps = {
   name: string;
   info: string;
   image: string;
-  active1: string
-  active2: string
 };
 
 export const Crew = (props: crewProps) => {
-  const { role, name, info, image, active1, active2 } = props;
+  const { role, name, info, image } = props;
 
   return (
     <>
@@ -30,10 +28,10 @@ export const Crew = (props: crewProps) => {
               <p className="info-crew">{info}</p>
             </div>
             <ul className="container-circles-nav">
-              <Link className={`${active1} circle`} to="/crew/douglashurley">
+              <Link className="circle" to="/crew/douglashurley">
                 <li></li>
               </Link>
-              <Link className={`${active2} circle`} to="/crew/mark">
+              <Link className="circle" to="/crew/mark">
                 <li></li>
               </Link>
               <Link className="circle" to="/crew/Victor">
