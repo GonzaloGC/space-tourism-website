@@ -1,15 +1,15 @@
 .container-bg-tech {
   background-image: url("../images/technology/background-technology-mobile.jpg");
   background-size: cover;
-  min-height: 500px;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 .container-tech {
   box-sizing: border-box;
   padding: 24px 24px 48px 24px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: max-content 322px 1fr;
+  grid-template-rows: max-content max-content 1fr;
   grid-template-areas:
     "title title"
     "imgTech imgTech"
@@ -20,8 +20,12 @@
   padding-bottom: 24px;
 }
 .container-img-tech {
+  /* padding-top: 5vh; */
+  min-height: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   grid-area: imgTech;
-  padding-top: 64px;
   margin-left: -24px;
   margin-right: -24px;
 }
@@ -114,9 +118,10 @@
   }
   .container-tech {
     padding: 40px;
-    grid-template-rows: max-content 421px 1fr;
+    grid-template-rows: max-content max-content 1fr;
   }
   .container-img-tech {
+    min-height: 45vh;
     margin-left: -40px;
     margin-right: -40px;
   }

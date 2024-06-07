@@ -11,12 +11,11 @@
   box-sizing: border-box;
   /* align-items: center; */
 }
-.container-img-header>a{
+.container-img-header > a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .img-logo-header {
   padding: 0;
   margin: 0;
@@ -28,4 +27,95 @@
   width: 24px;
   height: 21px;
   box-sizing: border-box;
+}
+
+nav{
+  display: none;
+}
+@media (width > 768px) {
+  .container-img-header {
+    width: 100%;
+    height: 96px;
+    padding: 24px 0 24px 40px;
+    display: flex;
+  }
+  nav {
+    display: initial;
+    margin: 0;
+    padding: 0;
+  }
+  .container-navigation {
+    margin: 0;
+    width: 75vw;
+    height: 96px;
+    display: flex;
+    align-items: end;
+    gap: 48px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1c1d28;
+    padding-right: 40px;
+  }
+  .container-navigation > li {
+    list-style: none;
+    /* height: 96px; */
+  }
+  .container-navigation > li > a {
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    padding: 35px 0;
+  }
+  .container-navigation > li > a:hover {
+    border-bottom: 3px solid white;
+  }
+  .container-img-header .display-logo {
+    display: none;
+  }
+  .container-img-header .icon-burguer-header {
+    display: none;
+  }
+}
+@media (width > 1385px) {
+  .container-img-header {
+    width: 100%;
+    padding: 0;
+    height: 136px;
+    display: flex;
+  }
+  .container-logo {
+    padding: 64px 24px 24px 64px;
+    display: flex;
+    gap: 64px;
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+  .line-header {
+    width: 40vw;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: absolute;
+    left: 176px;
+  }
+  .container-navigation {
+    margin: 0;
+    width: 45vw;
+    height: 96px;
+    display: flex;
+    justify-content: end;
+    /* align-items: end; */
+  }
 }
