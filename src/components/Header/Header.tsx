@@ -23,19 +23,22 @@ export const Header = () => {
         </a>
         <nav>
           <ul className="container-navigation">
-            <li>
-              <Link to="/">00 home</Link>
+            <li className="nav-item">
+              <Link className="nav-link" to="/"><span className="nav-num-link">00</span> home</Link>
             </li>
-            <li>
-              <Link to="/destination/moon">01 destination</Link>
+            <li className="nav-item">
+              <Link className="nav-link" to="/destination/moon"><span className="nav-num-link">01</span> destination</Link>
             </li>
-            <li>
-              <Link to="/crew/douglashurley">02 crew</Link>
+            <li className="nav-item">
+              <Link className="nav-link" to="/crew/douglashurley"><span className="nav-num-link">02</span> crew</Link>
             </li>
-            <li>
-              <Link to="/technology/launch">03 technology</Link>
+            <li className="nav-item">
+              <Link className="nav-link" to="/technology/launch"><span className="nav-num-link">03</span> technology</Link>
             </li>
           </ul>
+          <a href="#" className="nav-close">
+            <img className="img-burguer" src="../icon-close.svg" alt="" />
+          </a>
         </nav>
         <a href="#" onClick={handleClick} className="display-logo">
           <img
