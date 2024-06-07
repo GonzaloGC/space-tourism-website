@@ -7,6 +7,9 @@ export const TechnologySpaceport =()=>{
     image={data.technology.space.images.portrait}
     name={data.technology.space.name}
     description={data.technology.space.description}
+    active1=""
+    active2="circle-active3"
+    active3=""
     />
   )
 }

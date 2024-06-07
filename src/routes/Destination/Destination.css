@@ -9,14 +9,13 @@
 
 .container-destination {
   margin: 0;
-  overflow-y: hidden;
-  width: 100vw;
-  /* height: 100vh; */
+  /* width: 100%;
+  height: auto; */
   padding: 24px;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr max-content;
+  grid-template-rows: max-content min-content;
   /* row-gap: 5%; */
   row-gap: 32px;
   grid-template-areas:
@@ -214,8 +213,8 @@
   }
   .container-destination {
     margin: 0;
-    overflow-y: hidden;
-    width: 100vw;
+    width: 100%;
+    height: 80vh;
     padding: 24px;
     box-sizing: border-box;
     display: grid;
@@ -226,8 +225,6 @@
       "titleImg titleImg"
       "infoMoon infoMoon";
   }
-
-  
   .container-title-img {
     padding: 0;
     margin: 0;
@@ -326,15 +323,15 @@
   .container-destination {
     margin: 0;
     /* min-width: 1200px; */
-    /* width: 100vw;
-    height: 100vh; */
+    /* width: 100%;
+    height: 80dvh; */
     padding: 48px 165px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr;
-    column-gap: 32px;
-    /* row-gap: 5%; */
+    grid-template-rows: 1fr;
+    /* column-gap: 32px; */
+    row-gap: 0;
     /* row-gap: 32px; */
     grid-template-areas:
       "titleImg infoMoon"

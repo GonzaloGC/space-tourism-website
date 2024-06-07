@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <>
       <section className="container-bg">
-        <Header />
+        <Header marca="div-link-0" marca2="" marca3="" marca4="" />
         <section className="container-home">
           <main className="container-main">
             <span>SO, YOU WANT TO TRAVEL TO</span>
