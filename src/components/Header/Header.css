@@ -128,7 +128,7 @@ nav {
   letter-spacing: 2.7px;
   text-transform: uppercase;
 }
-.container-icon-close{
+.container-icon-close {
   grid-area: close;
   display: flex;
   flex-direction: column;
@@ -136,14 +136,28 @@ nav {
   align-items: end;
   padding: 24px;
 }
-.nav-close{
+.nav-close {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
+  border: none;
+  border-radius: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .img-close {
   width: 24px;
-  /* height: 21px; */
+  height: auto;
   box-sizing: border-box;
+}
+.display-logo {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 @media (width > 768px) {
   .container-img-header {
@@ -250,7 +264,7 @@ nav {
   .nav-num-link {
     padding: 5px;
   }
-  .container-img-header .display-logo {
+  .display-logo {
     display: none;
   }
   .container-img-header .icon-burguer-header {

@@ -68,7 +68,7 @@
   box-sizing: border-box;
   z-index: 1;
 }
-.container-button-circle > a > button {
+.button-cicle {
   width: 144px;
   height: 144px;
   background-color: white;
@@ -87,7 +87,7 @@
   position: relative;
 }
 
-button::before {
+.button-cicle::before {
   top: 0;
   left: 0;
   content: " ";
@@ -164,13 +164,13 @@ button::before {
     align-items: end;
     box-sizing: border-box;
   }
-  .container-button-circle > a > button {
+  .button-cicle {
     width: 272px;
     height: 272px;
     font-size: 32px;
     line-height: 37px;
   }
-  button::before {
+  .button-cicle::before {
     top: 0;
     left: 0;
     content: " ";
