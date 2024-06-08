@@ -57,7 +57,8 @@
   color: #ffffff;
 }
 .container-img-moon {
-  height: 20dvh;
+  height: 203px;
+  /* height: 20dvh; */
   min-height: 125px;
   display: flex;
   justify-content: center;
