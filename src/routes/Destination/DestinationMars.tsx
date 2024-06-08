@@ -10,6 +10,10 @@ export const DestinationMars = () => {
       infoPlanet={data.destinations.mars.description}
       avgDistance={data.destinations.mars.distance}
       travelTime={data.destinations.mars.travel}
+      active1=""
+      active2="active2"
+      active3=""
+      active4=""
     />
   );
 };

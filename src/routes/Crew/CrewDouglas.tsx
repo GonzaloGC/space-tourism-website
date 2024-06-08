@@ -8,6 +8,10 @@ export const CrewDouglas =()=>{
     name={data.crew.douglas.name}
     info={data.crew.douglas.info}
     image={data.crew.douglas.image}
+    circle1="circle1"
+    circle2=""
+    circle3=""
+    circle4=""
     />
   )
 }

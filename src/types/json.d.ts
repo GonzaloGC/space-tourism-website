@@ -5,7 +5,6 @@ interface data  {
   image: string;
 }
 
-
 declare module "*.json" {
   const value: data;
   export default value;

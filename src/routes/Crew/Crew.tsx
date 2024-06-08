@@ -8,10 +8,14 @@ type crewProps = {
   name: string;
   info: string;
   image: string;
+  circle1: string;
+  circle2: string;
+  circle3: string;
+  circle4: string;
 };
 
 export const Crew = (props: crewProps) => {
-  const { role, name, info, image } = props;
+  const { role, name, info, image, circle1, circle2, circle3, circle4 } = props;
 
   return (
     <>
@@ -28,16 +32,16 @@ export const Crew = (props: crewProps) => {
               <p className="info-crew">{info}</p>
             </div>
             <ul className="container-circles-nav">
-              <Link className="circle" to="/crew/douglashurley">
+              <Link className={`circle ${circle1}`} to="/crew/douglashurley">
                 <li></li>
               </Link>
-              <Link className="circle" to="/crew/mark">
+              <Link className={`circle ${circle2}`} to="/crew/mark">
                 <li></li>
               </Link>
-              <Link className="circle" to="/crew/Victor">
+              <Link className={`circle ${circle3}`} to="/crew/Victor">
                 <li></li>
               </Link>
-              <Link className="circle" to="/crew/anousheh">
+              <Link className={`circle ${circle4}`} to="/crew/anousheh">
                 <li></li>
               </Link>
             </ul>

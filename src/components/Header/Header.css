@@ -67,7 +67,7 @@ nav {
   animation-duration: 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-out;
 }
 @keyframes mendos {
   0% {
@@ -79,7 +79,6 @@ nav {
 }
 .container-navigation {
   grid-area: items;
-  /* width: 100%; */
   padding-top: 48px;
   padding-left: 32px;
   margin: 0;
@@ -102,10 +101,8 @@ nav {
   margin-right: 100px;
   padding: 0;
   margin: 0;
-  /* padding-right: 70%; */
   box-sizing: border-box;
 }
-
 .div-link {
   padding: 0;
   margin: 0;
@@ -131,13 +128,17 @@ nav {
   letter-spacing: 2.7px;
   text-transform: uppercase;
 }
-.nav-close {
+.container-icon-close{
   grid-area: close;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   padding: 24px;
+}
+.nav-close{
+  display: flex;
+  justify-content: center;
 }
 .img-close {
   width: 24px;
@@ -223,8 +224,6 @@ nav {
   .div-link:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     transition-duration: 0.5s;
-    /* padding: 35px 0;
-    border-right: 0; */
   }
   .div-link {
     border-top: 3px solid transparent;

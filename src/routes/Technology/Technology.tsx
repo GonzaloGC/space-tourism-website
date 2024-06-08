@@ -31,7 +31,7 @@ export const Technology = (props: technologyProps) => {
         </div>
         <div className="container-info-tech">
           <ul className="container-links-tech">
-            <li>
+            <li className="item-technology">
               <Link className={`${active1} hover-circle`} to="/technology/launch">1</Link>
             </li>
             <li>

@@ -11,6 +11,10 @@ export const DestinationMoon = () => {
         infoPlanet={data.destinations.moon.description}
         avgDistance={data.destinations.moon.distance}
         travelTime={data.destinations.moon.travel}
+        active1="active1"
+        active2=""
+        active3=""
+        active4=""
       />
     </>
   );

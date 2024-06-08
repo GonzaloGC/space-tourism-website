@@ -9,6 +9,11 @@ export const DestinationTitan =()=>{
       infoPlanet={data.destinations.titan.description}
       avgDistance={data.destinations.titan.distance}
       travelTime={data.destinations.titan.travel}
+      active1=""
+      active2=""
+      active3=""
+      active4="active4"
+
     />
   )
 }

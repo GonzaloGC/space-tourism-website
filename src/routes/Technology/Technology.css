@@ -2,7 +2,7 @@
   background-image: url("../images/technology/background-technology-mobile.jpg");
   background-size: cover;
   min-height: 100vh;
-  min-height: 100dvh;
+  height: 100dvh;
 }
 .container-tech {
   box-sizing: border-box;
@@ -20,7 +20,6 @@
   padding-bottom: 24px;
 }
 .container-img-tech {
-  /* padding-top: 5vh; */
   min-height: 34vh;
   display: flex;
   justify-content: center;
@@ -68,7 +67,6 @@
   justify-content: center;
   align-items: center;
   font-family: "Bellefair";
-  /* color: #ffffff; */
   font-size: 18px;
   box-sizing: border-box;
 }
@@ -90,11 +88,6 @@
   background-color: #ffffff;
   color: black;
 }
-
-
-
-
-
 .container-title-p {
   display: flex;
   flex-direction: column;

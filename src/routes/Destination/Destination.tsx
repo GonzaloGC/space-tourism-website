@@ -11,10 +11,24 @@ type propDestination = {
   infoPlanet: string;
   avgDistance: string;
   travelTime: string;
+  active1: string;
+  active2: string;
+  active3: string;
+  active4: string;
 };
 
 export const Destination = (props: propDestination) => {
-  const { namePlanet, imgPlanet, infoPlanet, avgDistance, travelTime } = props;
+  const {
+    namePlanet,
+    imgPlanet,
+    infoPlanet,
+    avgDistance,
+    travelTime,
+    active1,
+    active2,
+    active3,
+    active4,
+  } = props;
 
   // const bgDestination: React.CSSProperties = {
   //   backgroundImage: "url(background-destination-mobile.jpg)",
@@ -42,16 +56,27 @@ export const Destination = (props: propDestination) => {
             <aside className="container-aside">
               <ul className="container-li">
                 <li>
-                  <Link to="/destination/moon">MOON</Link>
+                  <Link
+                    className={`${active1} inactive`}
+                    to="/destination/moon"
+                  >
+                    MOON
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/destination/mars">MARS</Link>
+                  <Link className={`${active2} inactive`} to="/destination/mars">
+                    MARS
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/destination/europa">EUROPA</Link>
+                  <Link className={`${active3} inactive`} to="/destination/europa">
+                    EUROPA
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/destination/titan">TITAN</Link>
+                  <Link className={`${active4} inactive`} to="/destination/titan">
+                    TITAN
+                  </Link>
                 </li>
               </ul>
             </aside>
