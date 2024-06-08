@@ -4,9 +4,10 @@ import data from '../../data/data.json'
 export const TechnologySpaceport =()=>{
   return(
     <Technology
-    image={data.technology.space.images.portrait}
-    name={data.technology.space.name}
-    description={data.technology.space.description}
+    image={data.technology.spaceport.images.portrait}
+    name={data.technology.spaceport.name}
+    description={data.technology.spaceport.description}
+    imgPosition="img-position3"
     active1=""
     active2="circle-active3"
     active3=""

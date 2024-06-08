@@ -1,5 +1,5 @@
 .container-root-crew {
-  background-image: url("/images/crew/background-crew-mobile.jpg");
+  background-image: linear-gradient(rgba(11, 13, 23, 0.2), rgba(11, 13, 23, 0.5)) ,url("/images/crew/background-crew-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7,6 +7,7 @@
   padding: 0;
   min-height: 100vh;
   height: 100dvh;
+  position: relative;
 }
 .container-crew {
   margin: 0;
@@ -16,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto max-content;
-  row-gap: 32px;
+  row-gap: 35px;
   grid-template-areas:
     "titleInfoCrew titleInfoCrew"
     "imgCrew imgCrew";
@@ -63,7 +64,7 @@
   text-transform: uppercase;
 }
 .info-crew {
-  height: 108px;
+  height: 162px;
   margin: 0;
   padding: 0;
   font-family: "Barlow";
@@ -118,11 +119,12 @@
   grid-area: imgCrew;
   display: flex;
   justify-content: center;
-}
-.img-dauglas {
-  max-width: 55%;
-  height: auto;
-  object-fit: contain;
+  }
+  .img-dauglas {
+    width: 270px;
+    height: 340px;
+    object-fit: contain;
+    box-sizing: border-box;
 }
 @media (width > 767px) {
   .container-root-crew {
@@ -142,12 +144,17 @@
     box-sizing: border-box;
   }
   .container-info-crew {
+    min-height: 335px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0;
+  }
+  .container-title{
+    padding-bottom: 15px;
   }
   .container-cargo-name {
-    gap: 16px;
+    gap: 0;
   }
   .container-name-and-info {
     margin: 0;
@@ -155,13 +162,14 @@
     height: 305px;
     width: 512px;
     padding-top: 45px;
-    padding-bottom: 24px;
+    padding-bottom: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
   .cargo-crew {
+    padding: 0 0 16px 0;
     font-size: 24px;
     line-height: 28px;
   }
@@ -170,6 +178,10 @@
     line-height: 46px;
   }
   .info-crew {
+    padding: 0;
+    margin: 0;
+    height: 117px;
+    max-height: ;
     font-size: 16px;
     line-height: 180%;
   }

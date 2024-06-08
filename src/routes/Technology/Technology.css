@@ -1,5 +1,7 @@
 .container-bg-tech {
-  background-image: url("../images/technology/background-technology-mobile.jpg");
+  background-image: linear-gradient(rgba(11, 13, 23, 0), rgba(11, 13, 23, 0.3)),
+    url("../images/technology/background-technology-mobile.jpg");
+  background-position: center;
   background-size: cover;
   min-height: 100vh;
   height: 100dvh;
@@ -33,7 +35,16 @@
   height: 258px;
   width: 100vw;
   max-width: 100vw;
+  transition-duration: 0.3s;
+}
+.img-position1 {
+  object-position: bottom;
+}
+.img-position2 {
   object-position: center;
+}
+.img-position3 {
+  object-position: bottom;
 }
 .container-info-tech {
   grid-area: infoTech;
@@ -51,7 +62,8 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 35px;
+  gap: 16px;
+  /* gap: 35px; */
   padding: 0;
   margin: 30px 0 0 0;
 }
@@ -70,21 +82,21 @@
   font-size: 18px;
   box-sizing: border-box;
 }
-.hover-circle:hover{
-  border: 1px solid #FFFFFF;
+.hover-circle:hover {
+  border: 1px solid #ffffff;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
 
-.circle-active1{
+.circle-active1 {
   background-color: #ffffff;
   color: black;
 }
-.circle-active2{
+.circle-active2 {
   background-color: #ffffff;
   color: black;
 }
-.circle-active3{
+.circle-active3 {
   background-color: #ffffff;
   color: black;
 }
@@ -173,7 +185,8 @@
     background-image: url("../images/technology/background-technology-desktop.jpg");
   }
   .container-tech {
-    padding: 48px 0 48px 165px;
+    padding: 48px 0 40px 165px;
+    
     grid-template-areas:
       "title title"
       "infoTech imgTech"

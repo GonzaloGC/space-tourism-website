@@ -10,10 +10,11 @@ type technologyProps = {
   active1: string
   active2: string
   active3: string
+  imgPosition: string
 };
 
 export const Technology = (props: technologyProps) => {
-  const { image, name, description, active1, active2, active3 } = props;
+  const { image, name, description, active1, active2, active3, imgPosition } = props;
 
   return (
     <section className="container-bg-tech">
@@ -24,7 +25,7 @@ export const Technology = (props: technologyProps) => {
         </div>
         <div className="container-img-tech">
           <img
-            className="img-launch-tech"
+            className={`${imgPosition} img-launch-tech`} 
             src={image}
             alt="Image of the rockets that will be used for the trip"
           />

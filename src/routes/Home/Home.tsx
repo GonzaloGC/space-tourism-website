@@ -1,7 +1,4 @@
 import "./Home.css";
-import "@fontsource/bellefair";
-import "@fontsource/barlow";
-import "@fontsource/barlow-condensed";
 import { Header } from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 

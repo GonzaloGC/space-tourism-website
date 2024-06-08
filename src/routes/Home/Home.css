@@ -1,5 +1,5 @@
 .container-bg {
-  background-image: url("../images/home/background-home-mobile.jpg");
+  background-image: linear-gradient(rgba(11, 13, 23, 0.3), rgba(11, 13, 23, 0)) ,url("../images/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -115,7 +115,7 @@
   animation-iteration-count: infinite;
   animation-fill-mode: initial;
 }
-@keyframes circleHome {
+/* @keyframes circleHome {
   from {
     scale: 1;
   }
@@ -123,7 +123,7 @@
     scale: 1.9;
     opacity: 0;
   }
-}
+} */
 .container-button-circle > a {
   border-radius: 50%;
 }
@@ -171,6 +171,24 @@
     line-height: 37px;
   }
   .button-cicle::before {
+    /* animation-play-state: paused; */
+    animation-name: circleHome;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: initial;
+  }
+  @keyframes circleHome {
+    from {
+      scale: 0;
+    }
+    to {
+      scale: 0;
+      opacity: 0;
+    }
+  }
+
+  .button-cicle::after {
     top: 0;
     left: 0;
     content: " ";
@@ -191,26 +209,19 @@
     cursor: pointer;
     position: absolute;
     z-index: -1;
-    animation-name: circleHome;
+    animation-name: circleH;
     animation-duration: 2.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-fill-mode: initial;
+    /* animation-play-state: paused; */
   }
-  @keyframes circleHome {
-    0% {
+  @keyframes circleH {
+    from {
       scale: 1;
     }
-    50% {
-      /* scale: 1; */
-      opacity: 0.5;
-    }
-    50% {
-      /* scale: 1; */
-      opacity: 0.3;
-    }
-    100% {
-      scale: 1.5;
+    to {
+      scale: 1.7;
       opacity: 0;
     }
   }
