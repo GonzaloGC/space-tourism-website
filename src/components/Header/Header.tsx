@@ -79,12 +79,12 @@ export const Header = (props: headerProps) => {
             </li>
           </ul>
           <div className="container-icon-close">
-            <button onClick={handleClose} className="nav-close">
+            <button aria-label="close navigation menu" onClick={handleClose} className="nav-close">
               <img className="img-close" src="../icon-close.svg" alt="" />
             </button>
           </div>
         </nav>
-        <button onClick={handleOpen} className="display-logo">
+        <button aria-label="open navigation menu" onClick={handleOpen} className="display-logo">
           <img
             className="icon-burguer-header"
             src="/icon-hamburger.svg"

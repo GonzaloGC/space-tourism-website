@@ -60,7 +60,7 @@ const router = createBrowserRouter([
             element: <CrewMark />,
           },
           {
-            path: "/crew/Victor",
+            path: "/crew/victor",
             element: <CrewVictor />,
           },
           {

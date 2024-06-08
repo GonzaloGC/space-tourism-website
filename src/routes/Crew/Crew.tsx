@@ -38,7 +38,7 @@ export const Crew = (props: crewProps) => {
               <Link className={`circle ${circle2}`} to="/crew/mark">
                 <li></li>
               </Link>
-              <Link className={`circle ${circle3}`} to="/crew/Victor">
+              <Link className={`circle ${circle3}`} to="/crew/victor">
                 <li></li>
               </Link>
               <Link className={`circle ${circle4}`} to="/crew/anousheh">
