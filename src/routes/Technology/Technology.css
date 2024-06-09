@@ -81,13 +81,13 @@
   font-family: "Bellefair";
   font-size: 18px;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 .hover-circle:hover {
-  border: 1px solid #ffffff;
   transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
+  border: 1px solid #ffffff;
 }
-
 .circle-active1 {
   background-color: #ffffff;
   color: black;
@@ -186,7 +186,7 @@
   }
   .container-tech {
     padding: 48px 0 40px 165px;
-    
+
     grid-template-areas:
       "title title"
       "infoTech imgTech"

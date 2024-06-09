@@ -84,9 +84,6 @@
 .container-li > li {
   height: 100%;
 }
-.inactive:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-}
 .inactive {
   font-family: "Barlow Condensed";
   font-style: normal;
@@ -97,17 +94,37 @@
   text-decoration: none;
   letter-spacing: 0.15em;
   padding-bottom: 15px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  transition-duration: 0.3s;
+}
+.inactive:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+
 }
 .active1 {
+  border-bottom: 3px solid white;
+}
+.active1:hover {
   border-bottom: 3px solid white;
 }
 .active2 {
   border-bottom: 3px solid white;
 }
+.active2:hover {
+  border-bottom: 3px solid white;
+}
 .active3 {
   border-bottom: 3px solid white;
 }
+.active3:hover {
+  border-bottom: 3px solid white;
+}
 .active4 {
+  border-bottom: 3px solid white;
+}
+.active4:hover {
   border-bottom: 3px solid white;
 }
 .text-moon {
