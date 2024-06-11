@@ -36,6 +36,20 @@ export default defineConfig({
       workbox: {
         runtimeCaching: [
           {
+            urlPattern: /\.(?:woff|woff2|ttf|eot|otf)$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'font-cache',
+              expiration: {
+                maxEntries: 20,
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 días
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
             urlPattern: ({ request }) => request.destination === "image",
             handler: "CacheFirst",
             options: {

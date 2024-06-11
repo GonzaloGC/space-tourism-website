@@ -357,9 +357,7 @@ nav {
     left: 176px;
     z-index: 9999;
   }
-  .nav-close {
-    /* display: flex; */
-  }
+  
   .nav-transition-close {
     animation-name: men;
     animation-duration: 0s;

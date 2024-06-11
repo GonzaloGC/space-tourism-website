@@ -53,10 +53,11 @@
   margin: 0;
   font-family: "Barlow";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   line-height: 180%;
   box-sizing: border-box;
+  color: #D0D6F9;
 }
 .container-button-circle {
   height: 382px;
