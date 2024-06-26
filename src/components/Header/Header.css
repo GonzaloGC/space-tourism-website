@@ -12,6 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
+
 }
 .img-logo-header {
   padding: 0;
@@ -243,14 +245,14 @@ nav {
   }
   .div-link:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-    transition-duration: 0.5s;
+    transition: border-bottom 0.3s ease-in-out, border-top 0.1s ease-in-out;
   }
   .div-link {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding: 35px 0;
     border-right: 0;
-    transition-duration: 0.5s;
+    transition: border-bottom 0.3s ease-in-out, border-top 0.1s ease-in-out;
   }
   .div-link-0 {
     border-bottom: 3px solid white;
