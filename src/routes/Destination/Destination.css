@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* background-attachment: fixed; */
   min-height: 100vh;
   height: 100dvh;
 }
@@ -13,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: max-content min-content;
-  row-gap: 32px;
+  /* row-gap: 32px; */
   grid-template-areas:
     "titleImg titleImg"
     "infoMoon infoMoon";
@@ -24,7 +25,7 @@
   grid-area: titleImg;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -127,10 +128,10 @@
   border-bottom: 3px solid white;
 }
 .text-moon {
-  padding-bottom: 24px;
+  padding-bottom: 1rem;
 }
 .text-moon > h2 {
-  padding-top: 24px;
+  padding-top: 1rem;
   margin: 0;
   font-family: "Bellefair";
   font-style: normal;
@@ -141,7 +142,7 @@
   text-transform: uppercase;
 }
 .text-moon > p {
-  padding-top: 16px;
+  padding-top: 1rem;
   margin: 0;
   font-family: "Barlow";
   font-style: normal;
@@ -159,7 +160,7 @@
   border-bottom: 1px solid #979797;
 }
 .info-moon {
-  padding-top: 24px;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
